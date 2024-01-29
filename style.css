@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+
+:root {
+    --dark-blue-100: #609ED4;
+    --dark-blue-200: #356EA9;
+    --dark-blue-300: #0A3871;
+    --dark-blue-400: #072B61;
+    --dark-blue-500: #052051;
+    --gray-100: #CED4DA;
+    --gray-200: #ADB5BD;
+    --gray-300: #868E96;
+    --gray-400: #495057;
+    --gray-500: #343A40;
+    --light-blue-100: #F3F5FC;
+    --light-blue-200: #EFF1FA;
+    --light-blue-300: #E9ECF8;
+    --light-blue-400: #AAB2D5;
+    --light-blue-500: #757FB2;
+    --white: #FFFFFF;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Inter", sans-serif;
+    background-color: var(--light-blue-100);
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    text-align: center;
+    color: var(--gray-500);
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color: var(--gray-400);
+}
+
+
+h4 {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    color: var(--gray-400)
+}
+
+p {
+    color: var(--gray-400);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 10% 50% 40%;
+    height: 100vh;
+}
+
+.section {
+    display: flex;
+}
+
+section.logo {
+    flex: 1;
+}
+
+section.logo img {
+    width: 120px;
+    height: 48px;
+    padding: 40px 40px;
+}
+
+section.input-message {
+    flex: 4.5;
+    flex-direction: column;
+}
+
+.input-text-area {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 0;
+    text-align: left;
+    width: 44rem;
+    height: 20rem;
+    color: var(--dark-blue-300);
+    border: none;
+    resize: none;
+    margin-top: 168px;
+    background-color: var(--light-blue-100);
+}
+
+.input-text-area::placeholder {
+    color: var(--dark-blue-300);
+    opacity: 1;
+}
+
+.input-text-area:focus {
+    border: none;
+    outline: none;
+}
+
+section.output-message {
+    flex: 4.5;
+}
+
+.observation-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .5rem;
+}
+
+.empty-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.message-container {
+    width: 30rem;
+    overflow: hidden;
+}
+
+.btn-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3rem;
+}
+
+.btn-primary {
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    border-radius: 24px;
+    gap: 8px;
+    background-color: var(--dark-blue-300);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0;
+    text-align: center;
+    color: var(--white);
+    border: none;
+}
+
+.btn-primary:hover {
+    color: var(--white);
+    background-color: var(--dark-blue-400);
+}
+
+.btn-secondary {
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    border-radius: 24px;
+    gap: 8px;
+    background-color: var(--white);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0;
+    text-align: center;
+    color: var(--dark-blue-300);
+    border: 1px solid var(--dark-blue-300);
+}
+
+.btn-secondary:active {
+    color: var(--dark-blue-300);
+    background-color: var(--light-blue-400);
+}
+
+.btn-secondary:hover {
+    color: var(--dark-blue-300);
+    background-color: var(--light-blue-400);
+}
+
+.output-message-container {
+    border-radius: 32px;
+    background-color: var(--white);
+    margin: 40px 40px;
+}
+
+.output-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+}
+
+.copy-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+}
+
+.message {
+    display: none;
+    word-wrap: break-word;
+    white-space: normal;
+}

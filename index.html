@@ -3,8 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
 </head>
 <body>
+<div class="container">
+    <section id="logo" class="logo">
+        <img src="images/logo.svg" alt="Logo da Alura">
+    </section>
+    <section id="input-message" class="input-message">
+        <div class="containerCustomTextarea">
+            <textarea class="input-text-area" placeholder="Digite seu texto" maxlength="240"></textarea>
+        </div>
+        <div class="observation-wrapper">
+            <img src="images/exclamation-circle.svg" alt="logo exclamation">
+            <h4>Apenas letras minúsculas e sem acento.</h4>
+        </div>
+        <div class="btn-wrapper">
+            <button class="btn-primary">Criptografar</button>
+            <button class="btn-secondary">Descriptografar</button>
+        </div>
 
+    </section>
+    <section id="output-message" class="output-message">
+        <div class="output-message-container">
+            <div class="output-wrapper">
+                <div class="empty-container">
+                    <img class="empty-img" src="images/empty.svg" alt="homem com uma lupa">
+                    <h2>Nenhuma mensagem encontrada</h2>
+                    <h3>Digite um texto que você deseja criptografar ou descriptografar.</h3>
+                </div>
+                <div class="message-container">
+                    <p class="message"></p>
+                </div>
+            </div>
+            <div class="copy-wrapper">
+                <button class="btn-secondary" id="copy-button">Copiar</button>
+            </div>
+        </div>
+    </section>
+</div>
 </body>
 </html>
